@@ -17,6 +17,13 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "no-shadow": "off"
+  },
   "overrides": [
     {
       // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
@@ -25,12 +32,5 @@
       "rules": { "no-param-reassign": ["error", { "props": false }] }
     }
   ],
-  "plugins": ["react"],
-  "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "react/react-in-jsx-scope": "off",
-    "import/no-unresolved": "off",
-    "no-shadow": "off"
-  },
   "ignorePatterns": ["dist/", "build/"]
 }
